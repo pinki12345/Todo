@@ -129,7 +129,7 @@ const AddTaskModal = ({ isOpen, onClose, taskData }) => {
     try {
       if (taskData) {
         const response = await axios.put(
-          `http://localhost:3000/api/v1/updateTask/${taskData._id}`,
+          `https://todo-zomw.onrender.com/api/v1/updateTask/${taskData._id}`,
           {
             title,
             assignedUsers: assignedUsersId,
@@ -144,7 +144,7 @@ const AddTaskModal = ({ isOpen, onClose, taskData }) => {
         toast.success("Task updated successfully");
       } else {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/create",
+          "https://todo-zomw.onrender.com/api/v1/create",
           {
             title,
             assignedUsers: assignedUsersId,
@@ -195,7 +195,7 @@ const AddTaskModal = ({ isOpen, onClose, taskData }) => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/getAllUsersExceptCurrent",
+          "https://todo-zomw.onrender.com/api/v1/getAllUsersExceptCurrent",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -8,7 +8,7 @@ const DeleteModal = ({ isOpen, onConfirm, onCancel, taskId }) => {
   const handleDelete = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/api/v1/tasks/${taskId}`
+        `https://todo-zomw.onrender.com/api/v1/tasks/${taskId}`
       );
       if (response.status === 200) {
        

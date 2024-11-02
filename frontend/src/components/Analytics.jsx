@@ -8,7 +8,7 @@ const Analytics = () => {
     const fetchTaskCounts = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:3000/api/v1/count", {
+        const response = await fetch("https://todo-zomw.onrender.com/api/v1/count", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

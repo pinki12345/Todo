@@ -70,14 +70,14 @@ const Board = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        let url = "http://localhost:3000/api/v1/getAllTasks";
+        let url = "https://todo-zomw.onrender.com/api/v1/getAllTasks";
 
         if (selectedOption === "Today") {
-          url = "http://localhost:3000/api/v1/tasks/filter/today";
+          url = "https://todo-zomw.onrender.com/api/v1/tasks/filter/today";
         } else if (selectedOption === "This Week") {
-          url = "http://localhost:3000/api/v1/tasks/filter/thisWeek";
+          url = "https://todo-zomw.onrender.com/api/v1/tasks/filter/thisWeek";
         } else if (selectedOption === "This Month") {
-          url = "http://localhost:3000/api/v1/tasks/filter/thisMonth";
+          url = "https://todo-zomw.onrender.com/api/v1/tasks/filter/thisMonth";
         }
 
         const response = await axios.get(url, {
@@ -108,7 +108,7 @@ const Board = () => {
   const moveTask = async (taskId, newStatus) => {
     try {
       await axios.put(
-        "http://localhost:3000/api/v1/getAndUpdateTaskStatus",
+        "https://todo-zomw.onrender.com/api/v1/getAndUpdateTaskStatus",
         {
           jobId: taskId,
           status: newStatus,
@@ -133,7 +133,7 @@ const Board = () => {
   const updateChecklistItem = async (taskId, index, completed) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/v1/tasks/${taskId}/checklist/${index}`,
+        `https://todo-zomw.onrender.com/api/v1/tasks/${taskId}/checklist/${index}`,
         {
           method: "PUT",
           headers: {
@@ -173,7 +173,7 @@ const Board = () => {
   };
 
   const handleShare = (taskId) => {
-    const shareLink = `http://localhost:5174/Sharedtasks/${taskId}`;
+    const shareLink = `https://todo-zomw.onrender.com/Sharedtasks/${taskId}`;
     navigator.clipboard
       .writeText(shareLink)
       .then(() => {

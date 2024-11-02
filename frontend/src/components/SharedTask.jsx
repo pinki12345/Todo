@@ -15,7 +15,7 @@ const SharedTask = () => {
     const fetchTask = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/v1/getTaskById/${id}`
+          `https://todo-zomw.onrender.com/api/v1/getTaskById/${id}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
