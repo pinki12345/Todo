@@ -1,0 +1,267 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.required {
+  color: red;
+}
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.input {
+  width: 96%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.priorityGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.priorityButton {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #767575;
+}
+
+.highPriority {
+  font-size: 0.8em;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.highPriority::before {
+  content: "•";
+  color: red;
+  margin-right: 5px;
+  font-size: 2em;
+  line-height: 0;
+}
+
+.moderatePriority {
+  font-size: 0.8em;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.moderatePriority::before {
+  content: "•";
+  color: #18b0ff;
+  margin-right: 5px;
+  font-size: 2em;
+  line-height: 0;
+}
+.lowPriority {
+  font-size: 0.8em;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.lowPriority::before {
+  content: "•";
+  color: #63c05b;
+  margin-right: 5px;
+  font-size: 2em;
+  line-height: 0;
+}
+.assignContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.assignContainer p {
+  margin-right: 10px;
+}
+
+.inputForAssignee {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.addButton {
+  color: #767575;
+  background-color: #fff;
+  border: none;
+  padding: 6px 0px;
+  gap: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.cancelButton,
+.saveButton {
+  padding: 8px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.CancelSaveButton {
+  display: flex;
+  gap: 10px;
+}
+
+.cancelButton {
+  border: 1px solid #cf3636;
+  background-color: #fff;
+  color: #cf3636;
+}
+
+.saveButton {
+  background-color: #17a2b8;
+  color: white;
+}
+.checklistText {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checklistItem {
+  margin-bottom: 10px;
+}
+
+.inputWrapperForAssign {
+  position: relative;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.inputForAssignee {
+  padding-right: 30px;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.chevronIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.checklistCheckbox {
+  position: absolute;
+  left: 10px;
+  margin-right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.checklistInput {
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 8px;
+  padding-left: 30px;
+  flex-grow: 1;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  color: #cf3636;
+  margin-left: 5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checked {
+  background-color: #17a2b8;
+}
+
+.dateContainer {
+position: relative; 
+}
+
+.dateButton {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffff;
+  border: 1px solid #e2e2e2;
+  color: #707070;
+}
+
+.datePicker {
+  margin-top: 10px;
+}
+
+.datePickerContainer {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .datePickerButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+  }
+  
+  .todayButton,
+  .clearButton {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 5px 10px;
+    cursor: pointer; 
+  }
+  
+  .selectedPriority {
+    background-color: #EEECEC; 
+   
+  }

@@ -1,0 +1,175 @@
+
+
+.card {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.2s;
+    width:20vw;
+    height: auto;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+  }
+  
+  .priority {
+    font-weight: bold;
+  }
+  
+  .checklist, .dueDate {
+    margin: 5px 0;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+    margin-top: 8px; 
+  }
+  
+  .moveButton {
+    background-color: #EEECEC;
+    color: #767575;
+    border: none;
+    font-size: 9px;
+    border-radius: 5px;
+    padding: 4px 6px;
+    cursor: pointer;
+    
+  }
+  
+  .moveButton:hover {
+    background-color: #EEECEC;
+  }
+  
+  
+  .priorityContainer {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .priorityDot {
+    width: 6px;  
+    height: 6px; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin-right: 5px; 
+  }
+  
+  .low-priority {
+    background-color: #63C05B; 
+  }
+  
+  .moderate-priority {
+    background-color:#18B0FF; 
+  }
+  
+  .high-priority {
+    background-color: #FF2473; 
+  }
+  
+  .title{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+  .priorityText{
+    font-size: 10px;
+    color: #707070;
+    margin: 0;
+  }
+  
+  
+  .checklistItem {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .checkboxBorder {
+    border: 1px solid gray;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .checklistHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px; 
+  }
+  
+  .iconContainer {
+    background-color: #f0f0f0; 
+    padding: 4px; 
+    border-radius: 4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dueDateContainer {
+    background-color: #CF3636;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 4px 2px; 
+    display: inline-block;
+    margin: 0; 
+  }
+  .dateAndButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 25px; 
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    z-index: 10;
+  }
+  
+  .dropdownMenu button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 4px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdownMenu button:hover {
+    background-color: #f0f0f0;
+  }

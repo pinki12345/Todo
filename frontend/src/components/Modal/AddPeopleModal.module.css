@@ -1,0 +1,78 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  gap:10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.emailInput {
+  width: 94%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.heading{
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cancelButton {
+  width: 49%;
+  color: #CF3636;
+  background-color: #fff;
+  border:1px solid #CF3636;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addButton {
+  width: 49%;
+  background: #17A2B8;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* .cancelButton:hover,
+.addButton:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */

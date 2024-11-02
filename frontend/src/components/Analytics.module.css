@@ -1,0 +1,44 @@
+.analyticsContainer {
+  padding: 20px;
+}
+.AnalyticsBox {
+  display: flex;
+  align-items: start;
+  gap: 35px;
+  margin-top: 30px;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #F9FCFF;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: calc(100% - 10px);
+}
+
+.bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #90C4CC;
+}
+
+.taskLabel {
+  flex: 1;
+  /* font-weight: bold; */
+}
+
+.taskCount {
+  margin-left: 10px;
+  color: #555;
+}

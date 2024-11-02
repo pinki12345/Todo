@@ -1,0 +1,46 @@
+/* ThankYouModal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    width: 350px;
+    height: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  
+  .message {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 27.24px;
+    font-weight: 600;
+  }
+  
+  .closeButton {
+    padding: 10px 15px;
+    width: 60%;
+    background-color: #17A2B8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
